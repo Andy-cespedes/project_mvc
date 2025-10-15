@@ -1,0 +1,1 @@
+"# project_mvc"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/Andy-cespedes/project_mvc.gitgit push -u origin main
