@@ -9,6 +9,13 @@
  * 
  */
 
+include_once "controllers/product_controller.php";
+
+
+
+
+
+
 
 
 ?>
