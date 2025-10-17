@@ -20,6 +20,19 @@ login html =
     </form>
 
 
-try , y catch
+try , y catch = BUSCAR 
 
-crear producto basado en entidad producto
+
+crear producto basado en entidad producto=
+<?php
+
+include_once("product.class.php");
+
+try {
+    $pizza_jamon = new Product(11, "Jamón y Morrón", 19000, "img/morron.jpg", 100);
+    echo "Descripción de la pizza : " . $pizza_jamon->getDescription();
+    echo "<br>";
+    echo "Precio de la pizza : " . $pizza_jamon->getPrice();
+    echo "<br>";
+} catch (Exception $e) {
+    echo "Error en el Producto";
