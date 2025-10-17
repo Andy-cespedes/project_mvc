@@ -30,7 +30,7 @@
   $totalProducts=count($products);
   
   // Incluir la vista
-include_once  "views/product_list.php";
+include_once  "views/product_boot_list.php";
   
 
 
