@@ -1,6 +1,7 @@
 https://www.perplexity.ai/  (IA para estudiar)
 
 preguntas =
+1 Desarrollar el código html de un form para un login  - (el proyecto pizzas, estudiar la etiqueta form) saber que hace la etiqueta form , métodos de pasaje de información, diferencia entre post, get, porqué importante la codificación utf 8 paa enviar los datos
 
 login html =
 <form class="form-signin" accept-charset="utf-8" method="POST" action="login.php">
@@ -20,10 +21,15 @@ login html =
     </form>
 
 
-try , y catch = BUSCAR 
+2 - Cómo se manejan excepciones en php? que es un try-catch? 
+try y catch se usan para manejar exepciones, que son errores que ocurren durante la ejecucion del codigo. El bloque try contiene el codigo que podriar 
+fallar, y si ocurren un error , el control se trasfiere al bloque catch, quemaneja ese error de forma controlada en lugar de detener el programa fatalmente.
 
 
-crear producto basado en entidad producto=
+
+3  Cómo crear un nuevo producto basado en la entidad producto- 
+A partir de la clase producto generar un nuevo producto.Diferencia entre getters y setters
+
 <?php
 
 include_once("product.class.php");
@@ -36,3 +42,7 @@ try {
     echo "<br>";
 } catch (Exception $e) {
     echo "Error en el Producto";
+
+    Los getters y setters son métodos en PHP que se usan para acceder y modificar propiedades privadas de una clase, respectivamente.
+    Los getters (obtener) recuperan el valor de una propiedad, mientras que los setters (fijar) establecen un nuevo valor a una propiedad.
+    Se utilizan para la encapsulación, permitiendo un control más preciso sobre el acceso y la modificación de los datos, como la validación de los valores antes de asignarlos. 
