@@ -22,6 +22,11 @@ login html =
 
 
 2 - Cómo se manejan excepciones en php? que es un try-catch? 
+
+El manejo de excepciones en PHP se realiza principalmente usando la estructura try-catch-finally.
+Si ocurre una excepción, esta se captura en uno o varios bloques
+
+
 try y catch se usan para manejar exepciones, que son errores que ocurren durante la ejecucion del codigo. El bloque try contiene el codigo que podriar 
 fallar, y si ocurren un error , el control se trasfiere al bloque catch, quemaneja ese error de forma controlada en lugar de detener el programa fatalmente.
 
@@ -35,13 +40,13 @@ A partir de la clase producto generar un nuevo producto.Diferencia entre getters
 include_once("product.class.php");
 
 try {
-    $pizza_jamon = new Product(11, "Jamón y Morrón", 19000, "img/morron.jpg", 100);
-    echo "Descripción de la pizza : " . $pizza_jamon->getDescription();
-    echo "<br>";
+    //$pizza_jamon = new Product(11, "Jamón y Morrón", 19000, "img/morron.jpg", 100);
+    //echo "Descripción de la pizza : " . $pizza_jamon->getDescription();
+    //echo "<br>";
     echo "Precio de la pizza : " . $pizza_jamon->getPrice();
     echo "<br>";
 } catch (Exception $e) {
-    echo "Error en el Producto";
+    echo "Error en el Producto"};
 
     Los getters y setters son métodos en PHP que se usan para acceder y modificar propiedades privadas de una clase, respectivamente.
     Los getters (obtener) recuperan el valor de una propiedad, mientras que los setters (fijar) establecen un nuevo valor a una propiedad.
